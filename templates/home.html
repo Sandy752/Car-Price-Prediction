@@ -1,107 +1,98 @@
 <html>
 <body>
     <div class="login">
-       <h1>Student Exam Performance Indicator</h1>
+       <h1>Car Price</h1>
    
        <form action="{{ url_for('predict_datapoint')}}" method="post">
         <h1>
-            <legend>Student Exam Performance Prediction</legend>
+            <legend>Car Price Prediction</legend>
         </h1>
         <div class="mb-3">
-            <label class="form-label">Gender</label>
-            <select class="form-control" name="gender" placeholder="Enter you Gender" required>
-                <option class="placeholder" selected disabled value="">Select your Gender</option>
-                <option value="male">
-                    Male
-                </option>
-                <option value="female">
-                    Female
-                </option>
-            </select>
+            <label class="form-label">model</label>
+            <input type="text" name="model" placeholder="Enter model" required="required" /><br>
         </div>
         <div class="mb-3">
-            <label class="form-label">Race or Ethnicity</label>
-            <select class="form-control" name="ethnicity" placeholder="Enter you ethnicity" required>
-                <option class="placeholder" selected disabled value="">Select Ethnicity</option>
-                <option value="group A">
-                    Group A
-                </option>
-                <option value="group B">
-                    Group B
-                </option>
-                <option value="group C">
-                    Group C
-                </option>
-                <option value="group D">
-                    Group D
-                </option>
-                <option value="group E">
-                    Group E
-                </option>
-            </select>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Parental Level of Education</label>
-            <select class="form-control" name="parental_level_of_education"
+            <label class="form-label">seller_type</label>
+            <select class="form-control" name="seller_type"
                 placeholder="Enter you Parent Education" required>
-                <option class="placeholder" selected disabled value="">Select Parent Education</option>
-                <option value="associate's degree">
-                    associate's degree
+                <option class="placeholder" selected disabled value="">Select seller_type</option>
+                <option value="Dealer">
+                    Dealer
                 </option>
-                <option value="bachelor's degree">
-                    bachelor's degree
+                <option value="Individual">
+                    Individual
                 </option>
-                <option value="high school">
-                    high school
-                </option>
-                <option value="master's degree">
-                    master's degree
-                </option>
-                <option value="some college">
-                    some college
-                </option>
-                <option value="some high school">
-                    some high school
+                <option value="Trustmark Dealer">
+                    Trustmark Dealer
                 </option>
             </select>
         </div>
         <div class="mb-3">
-            <label class="form-label">Lunch Type</label>
-            <select class="form-control" name="lunch" placeholder="Enter you Lunch" required>
-                <option class="placeholder" selected disabled value="">Select Lunch Type</option>
-                <option value="free/reduced">
-                    free/reduced
+            <label class="form-label">fuel type</label>
+            <select class="form-control" name="fuel_type" placeholder="fuel_type" required>
+                <option class="placeholder" selected disabled value="">Select fuel_type</option>
+                <option value="Petrol">
+                    Petrol
                 </option>
-                <option value="standard">
-                    standard
+                <option value="Diesel">
+                    Diesel
+                </option>
+                <option value="CNG">
+                    CNG
+                </option>
+                <option value="LPG">
+                    LPG
+                </option>
+                <option value="Electric">
+                    Electric
                 </option>
             </select>
         </div>
         <div class="mb-3">
-            <label class="form-label">Test preparation Course</label>
-            <select class="form-control" name="test_preparation_course" placeholder="Enter you Course"
+            <label class="form-label">Transmission Type</label>
+            <select class="form-control" name="transmission_type" placeholder="Enter you Course"
                 required>
-                <option class="placeholder" selected disabled value="">Select Test_course</option>
-                <option value="none">
-                    None
+                <option class="placeholder" selected disabled value="">Select transmission type</option>
+                <option value="Manual">
+                    Manual
                 </option>
-                <option value="completed">
-                    Completed
+                <option value="Automatic">
+                    Automatic
                 </option>
             </select>
         </div>
         <div class="mb-3">
-            <label class="form-label">Writing Score out of 100</label>
-            <input class="form-control" type="number" name="reading_score"
-                placeholder="Enter your Reading score" min='0' max='100' />
+            <label class="form-label">Vehicle Age</label>
+            <input class="form-control" type="number" name="vehicle_age"
+                placeholder="Enter Vehicle age"/>
         </div>
         <div class="mb-3">
-            <label class="form-label">Reading Score out of 100</label>
-            <input class="form-control" type="number" name="writing_score"
-                placeholder="Enter your Reading Score" min='0' max='100' />
+            <label class="form-label">KM Driven</label>
+            <input class="form-control" type="number" name="km_driven"
+                placeholder="Enter KM Driven" />
         </div>
         <div class="mb-3">
-            <input class="btn btn-primary" type="submit" value="Predict your Maths Score" required />
+            <label class="form-label">Mileage</label>
+            <input class="form-control" type="number" name="mileage"
+                placeholder="Enter Mileage" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Engine</label>
+            <input class="form-control" type="number" name="engine"
+                placeholder="Enter Engine" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Max Power</label>
+            <input class="form-control" type="number" name="max_power"
+                placeholder="Enter max power" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Seats</label>
+            <input class="form-control" type="number" name="seats"
+                placeholder="Enter seats" />
+        </div>
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict Car Price" required />
         </div>
     </form>
     <h2>
