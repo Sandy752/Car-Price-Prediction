@@ -27,38 +27,41 @@ class PredictPipeline:
 
 class CustomData:
     def __init__(  self,
-        gender: str,
-        race_ethnicity: str,
-        parental_level_of_education,
-        lunch: str,
-        test_preparation_course: str,
-        reading_score: int,
-        writing_score: int):
+        model: str,
+        seller_type: str,
+        fuel_type: str,
+        transmission_type: str,
+        vehicle_age: int,
+        km_driven: int,
+        mileage: int,
+        engine: int,
+        max_power: int,
+        seats: int
+        ):
 
-        self.gender = gender
-
-        self.race_ethnicity = race_ethnicity
-
-        self.parental_level_of_education = parental_level_of_education
-
-        self.lunch = lunch
-
-        self.test_preparation_course = test_preparation_course
-
-        self.reading_score = reading_score
-
-        self.writing_score = writing_score
+        self.model = model
+        self.seller_type = seller_type
+        self.fuel_type = fuel_type
+        self.transmission_type = transmission_type
+        self.vehicle_age = vehicle_age
+        self.km_driven = km_driven
+        self.mileage = mileage
+        self.engine=engine
+        self.max_power=max_power
+        self.seats=seats
 
     def get_data_as_data_frame(self):
         try:
             custom_data_input_dict = {
-                "gender": [self.gender],
-                "race_ethnicity": [self.race_ethnicity],
-                "parental_level_of_education": [self.parental_level_of_education],
-                "lunch": [self.lunch],
-                "test_preparation_course": [self.test_preparation_course],
-                "reading_score": [self.reading_score],
-                "writing_score": [self.writing_score],
+                "model": [self.model],
+                "seller_type": [self.seller_type],
+                "fuel_type": [self.fuel_type],
+                "transmission_type": [self.transmission_type],
+                "vehicle_age": [self.vehicle_age],
+                "mileage": [self.mileage],
+                "engine": [self.engine],
+                "max_power": [self.max_power],
+                "seats": [self.seats]
             }
 
             return pd.DataFrame(custom_data_input_dict)
