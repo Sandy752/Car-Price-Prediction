@@ -21,13 +21,16 @@ def predict_datapoint():
         return render_template('home.html')
     else:
         data=CustomData(
-            gender=request.form.get('gender'),
-            race_ethnicity=request.form.get('ethnicity'),
-            parental_level_of_education=request.form.get('parental_level_of_education'),
-            lunch=request.form.get('lunch'),
-            test_preparation_course=request.form.get('test_preparation_course'),
-            reading_score=float(request.form.get('writing_score')),
-            writing_score=float(request.form.get('reading_score'))
+            model=request.form.get('model'),
+            seller_type=request.form.get('seller_type'),
+            fuel_type=request.form.get('fuel_type'),
+            transmission_type=request.form.get('transmission_type'),
+            mileage=float(request.form.get('mileage')),
+            max_power=float(request.form.get('max_power')),
+            vehicle_age=float(request.form.get('vehicle_age')),
+            km_driven=int(request.form.get('km_driven')),
+            engine=int(request.form.get('engine')),
+            seats=int(request.form.get('seats'))
 
         )
         pred_df=data.get_data_as_data_frame()
