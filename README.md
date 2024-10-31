@@ -13,7 +13,7 @@
 * [Libraries](#libraries)
 * [Algorithms Used](#algorithms-used)
 * [Model Performance Summary](#model-performance-summary)
-* [Hyperparameter tuning](#hyperparamter-tuning)
+* [Hyperparameter tuning](#hyperparameter-tuning)
 * [Best Parameters](#best-parameters)
 * [Installation](#installation)
 
