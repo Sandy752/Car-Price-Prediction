@@ -19,4 +19,4 @@
 | **Random Forest Regressor**| 139,138.17          | 39,895.98           | 0.9761      | 221,936.27         | 100,966.59         | 0.9346   |
 
 ### Summary
-The K-Neighbors Regressor and Random Forest Regressor performed the best on the test set, achieving high R² scores and lower RMSE compared to other models. In contrast, while the Decision Tree had excellent performance on the training set, it showed a significant drop in performance on the test set, indicating potential overfitting.
+The K-Neighbors Regressor and Random Forest Regressor performed the best on the test set, achieving high R² scores and lower RMSE compared to other models. Therefore, we will perform hyperparameter tuning on the K-Neighbors Regressor and Random Forest Regressor. In contrast, while the Decision Tree had excellent performance on the training set, it showed a significant drop in performance on the test set, indicating potential overfitting.
