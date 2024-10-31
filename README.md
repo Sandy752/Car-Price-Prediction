@@ -34,12 +34,12 @@ A preview of top five rows of the Car Dekho dataset.
 
 progress!!!!
 
-<h3>Tools Used </h3>h3<a id="3"></a>🔧
+<h3>Tools Used </h3><a id="3"></a>
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 
-<h3>Libraries</h3><a id="4"></a> 📚
+<h3>Libraries</h3><a id="4"></a>
 
 ![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-FF7F0E?style=for-the-badge&logo=matplotlib&logoColor=white)
@@ -48,7 +48,7 @@ progress!!!!
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 
 
-## <h3>Algorithms Used<h3><a id="5"></a> 🤖
+<h3>Algorithms Used<h3><a id="5"></a>
 
 1. Decision Tree
 2. Random Forest (yielding highest accuracy)
