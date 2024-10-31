@@ -10,8 +10,8 @@
 * [Dataset Preview](#dataset-preview)
 * [Demo](#demo)   
 * [Tools Used](#3)
-* [Libraries](#libraries)
-* [Algorithms Used](#algorithms-used)
+* [Libraries](#4)
+* [Algorithms Used](#5)
 * [Model Performance Summary](#model-performance-summary)
 * [Hyperparameter tuning](#hyperparameter-tuning)
 * [Best Parameters](#best-parameters)
@@ -39,7 +39,7 @@ progress!!!!
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 
-## Libraries 📚
+<h3>Libraries</h3><a id="4"></a> 📚
 
 ![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-FF7F0E?style=for-the-badge&logo=matplotlib&logoColor=white)
@@ -48,7 +48,7 @@ progress!!!!
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 
 
-## Algorithms Used 🤖
+## <h3>Algorithms Used<h3><a id="5"></a> 🤖
 
 1. Decision Tree
 2. Random Forest (yielding highest accuracy)
